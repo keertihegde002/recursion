@@ -1,0 +1,9 @@
+import sys
+nums=[-2,-2,4,5,6,0]
+maxsum=-sys.maxsize-1
+cursum=0
+for i in range(len(nums)):
+    cursum=max(cursum+nums[i],nums[i])
+    maxsum=max(maxsum,cursum)
+    
+print(maxsum)
